@@ -1,0 +1,36 @@
+<html>
+    <style>
+        .gridcontainer{
+        display:grid;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        column-gap:18px;
+        row-gap: 18px;
+        width:630px
+        }
+        .gridcontainer>div{
+            height:100px;
+            width:100px;
+            background-color:white;
+            box-shadow:8px 8px red;
+            border: 3px solid red;
+        }
+    </style>
+    <body>
+   <div class="gridcontainer">
+        <div></div>
+        <div ></div>
+        <div ></div>
+        <div ></div>
+        <div style="grid-column:5/7;width:200px";></div>
+        <div style="grid-column:1/3;width:200px";></div>
+        <div  style="grid-column:3/5; width:200px";></div>
+        <div></div>
+        <div ></div>
+        <div ></div>
+        <div ></div>
+        <div style="grid-column:3/5; width:200px";></div>
+        <div style="grid-column:5/7;width:200px"></div>
+    </div>
+    </body>
+</html>
